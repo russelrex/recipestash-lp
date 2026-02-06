@@ -228,7 +228,7 @@ function HomePage() {
           <h2>Cooks who already stash with us</h2>
           <p>RecipeStash is built for real kitchens, busy weeknights, and treasured family meals.</p>
         </div>
-        <div className="home-testimonial-grid">
+        {/* <div className="home-testimonial-grid">
           <article className="home-testimonial-card">
             <p className="home-quote">
               “I finally moved my grandmother&apos;s recipes out of an old shoebox. Now my siblings
@@ -250,7 +250,7 @@ function HomePage() {
             </p>
             <p className="home-quote-author">— Priya, food blogger</p>
           </article>
-        </div>
+        </div> */}
       </section>
 
       {/* Simple footer */}
