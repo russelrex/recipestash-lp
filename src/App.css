@@ -466,13 +466,10 @@
   margin-bottom: 0.4rem;
 }
 
-.home-footer-link {
-  color: #B15912;
-  font-weight: 500;
-}
-
-.home-footer-link:hover {
-  text-decoration: underline;
+.home-footer-subtext {
+  font-size: 0.85rem;
+  color: #8B6F47;
+  opacity: 0.8;
 }
 
 .home-testimonials {

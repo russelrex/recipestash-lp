@@ -254,11 +254,9 @@ function HomePage() {
       </section>
 
       {/* Simple footer */}
-      <footer className="home-footer" id="signin">
-        <p>Ready to stash your first recipe?</p>
-        <a href="#" className="home-footer-link">
-          Sign in or create an account
-        </a>
+      <footer className="home-footer">
+        <p>RecipeStash is available exclusively on mobile.</p>
+        <p className="home-footer-subtext">Download the app to get started.</p>
       </footer>
     </div>
   );
