@@ -206,6 +206,14 @@
   justify-content: center;
 }
 
+.home-hero-screenshot {
+  width: 88%;
+  height: 88%;
+  border-radius: 22px;
+  object-fit: cover;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
 .home-hero-egg {
   font-size: 3rem;
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
@@ -494,6 +502,53 @@
 .home-quote-author {
   font-size: 0.85rem;
   color: #8B6F47;
+}
+
+.home-screens {
+  background: #fdf7e6;
+}
+
+.home-screens-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.8rem;
+}
+
+.home-screen-card {
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(138, 109, 59, 0.18);
+  box-shadow: 0 14px 32px rgba(153, 108, 46, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-screen-thumb {
+  background: #e6f4d5;
+  padding: 0.8rem;
+}
+
+.home-screen-thumb img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.home-screen-card figcaption {
+  padding: 1rem 1.1rem 1.4rem;
+}
+
+.home-screen-card h3 {
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.home-screen-card p {
+  font-size: 0.9rem;
+  color: #5C4630;
 }
 
 @keyframes heroFloat {
@@ -846,6 +901,10 @@
 
   .home-testimonial-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .home-screens-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .home-download-inner {

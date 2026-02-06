@@ -30,7 +30,11 @@ function HomePage() {
                 <span className="home-hero-camera">📷</span>
               </div>
               <div className="home-hero-card-image">
-                <span className="home-hero-egg">🍳</span>
+                <img
+                  src="/login.png"
+                  alt="RecipeStash mobile login screen"
+                  className="home-hero-screenshot"
+                />
                 <span className="home-hero-star">⭐</span>
               </div>
               <div className="home-hero-card-body">
@@ -42,6 +46,101 @@ function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* App Screens Section */}
+      <section className="home-section home-screens" id="screens">
+        <div className="home-section-header">
+          <h2>A glimpse inside the RecipeStash app</h2>
+          <p>
+            Capture recipes, share posts, and browse your feed in an interface designed to feel as
+            warm and inviting as your kitchen.
+          </p>
+        </div>
+        <div className="home-screens-grid">
+          <figure className="home-screen-card">
+            <div className="home-screen-thumb">
+              <img src="/add_recipe.png" alt="Add recipe screen" />
+            </div>
+            <figcaption>
+              <h3>Create recipes with ease</h3>
+              <p>
+                Add photos, ingredients, and step-by-step instructions in a clean flow built for
+                busy home cooks.
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure className="home-screen-card">
+            <div className="home-screen-thumb">
+              <img src="/create_newsfeed_posts.png" alt="Create post screen" />
+            </div>
+            <figcaption>
+              <h3>Share moments from your kitchen</h3>
+              <p>
+                Post updates, link recipes, and let friends know what&apos;s simmering on your
+                stove right now.
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure className="home-screen-card">
+            <div className="home-screen-thumb">
+              <img src="/newsfeed.png" alt="Newsfeed screen" />
+            </div>
+            <figcaption>
+              <h3>Stay inspired with your feed</h3>
+              <p>
+                Discover new dishes, see what friends are cooking, and save ideas directly into
+                your stash.
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure className="home-screen-card">
+            <div className="home-screen-thumb">
+              <img src="/profile.png" alt="Profile screen" />
+            </div>
+            <figcaption>
+              <h3>Showcase your cooking profile</h3>
+              <p>
+                Highlight your best recipes, recent posts, and followers—all in a profile that
+                feels like your personal cookbook cover.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      {/* Download Section */}
+      <section className="home-section home-download" id="download">
+        <div className="home-download-inner">
+          <div className="home-download-copy">
+            <h2>Bring RecipeStash into your kitchen</h2>
+            <p>
+              Coming soon on Android (and coming soon to more platforms), so your recipes are always
+              within reach—on the counter, on the sofa, or at the store.
+            </p>
+          </div>
+          <div className="home-download-badges">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.recipestash.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="home-store-badge android"
+            >
+              <span className="store-label">Coming Soon</span>
+              <span className="store-name">Google Play</span>
+            </a>
+            <a
+              href="#"
+              className="home-store-badge coming-soon"
+            >
+              <span className="store-label">Coming soon</span>
+              <span className="store-name">iOS App Store</span>
+            </a>
           </div>
         </div>
       </section>
@@ -151,37 +250,6 @@ function HomePage() {
             </p>
             <p className="home-quote-author">— Priya, food blogger</p>
           </article>
-        </div>
-      </section>
-
-      {/* Download Section */}
-      <section className="home-section home-download" id="download">
-        <div className="home-download-inner">
-          <div className="home-download-copy">
-            <h2>Bring RecipeStash into your kitchen</h2>
-            <p>
-              Available on Android (and coming soon to more platforms), so your recipes are always
-              within reach—on the counter, on the sofa, or at the store.
-            </p>
-          </div>
-          <div className="home-download-badges">
-            <a
-              href="https://play.google.com/store/apps/details?id=com.recipestash.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="home-store-badge android"
-            >
-              <span className="store-label">Download on</span>
-              <span className="store-name">Google Play</span>
-            </a>
-            <a
-              href="#"
-              className="home-store-badge coming-soon"
-            >
-              <span className="store-label">Coming soon</span>
-              <span className="store-name">iOS App Store</span>
-            </a>
-          </div>
         </div>
       </section>
 
