@@ -931,3 +931,43 @@
     gap: 0.9rem;
   }
 }
+
+/* Extra-large screens */
+@media (min-width: 1600px) {
+  .brand {
+    top: 3.2rem;
+    left: 4.5rem;
+  }
+
+  .brand-name {
+    font-size: 3rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.95rem;
+  }
+
+  .nav-links {
+    top: 3.4rem;
+    right: 4.5rem;
+    gap: 2.6rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .cta-wrapper {
+    bottom: 6rem;
+  }
+
+  .cta-button {
+    padding: 1.1rem 3.4rem;
+    font-size: 1.05rem;
+  }
+
+  .scroll-hint {
+    bottom: 2.2rem;
+    font-size: 0.8rem;
+  }
+}
