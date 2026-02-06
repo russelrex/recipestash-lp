@@ -421,7 +421,7 @@ function LandingPage() {
         >
           {/* Instagram */}
           <a
-            href="https://instagram.com/recipestash"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className={`social-link ${socialInverted ? 'inverted' : ''}`}
@@ -434,7 +434,7 @@ function LandingPage() {
 
           {/* Twitter / X */}
           <a
-            href="https://x.com/recipestash"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className={`social-link ${socialInverted ? 'inverted' : ''}`}
@@ -447,7 +447,7 @@ function LandingPage() {
 
           {/* TikTok */}
           <a
-            href="https://tiktok.com/@recipestash"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className={`social-link ${socialInverted ? 'inverted' : ''}`}
@@ -460,7 +460,7 @@ function LandingPage() {
 
           {/* Facebook */}
           <a
-            href="https://facebook.com/recipestash"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className={`social-link ${socialInverted ? 'inverted' : ''}`}

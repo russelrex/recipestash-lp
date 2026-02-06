@@ -1,0 +1,22 @@
+{
+  "name": "RecipeStash - Recipe Sharing Platform",
+  "short_name": "RecipeStash",
+  "description": "Share, discover, and organize your favorite recipes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8E1",
+  "theme_color": "#B15912",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/recipestash-iconv3.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/recipestash-iconv3.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

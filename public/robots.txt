@@ -1,0 +1,40 @@
+# RecipeStash - Production robots.txt
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+
+# Disallow admin/auth pages (if you have them on the landing page)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /register/
+
+# Crawl-delay (optional, for being polite to servers)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.recipestash.food/sitemap.xml
+
+# Common social media bots
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+# Block bad bots (optional)
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
