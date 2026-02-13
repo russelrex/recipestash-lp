@@ -1,0 +1,31 @@
+/* Landing page global styles and About section */
+
+main {
+  min-height: 100vh;
+}
+
+.landing-about {
+  padding: 4rem 2rem;
+  background: rgba(15, 23, 42, 0.6);
+  color: #e5e7eb;
+}
+
+.landing-about-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.landing-about h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem;
+}
+
+.landing-about p {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.6;
+  margin: 0;
+  color: #e5e7eb;
+}

@@ -1,0 +1,122 @@
+.carouselWrapper {
+  position: relative;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-45%);
+  z-index: 2;
+  width: 100%;
+  max-width: 800px;
+}
+
+.carouselContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.carouselTrack {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 0;
+}
+
+.carouselSlide {
+  width: 100%;
+  flex-shrink: 0;
+  max-width: 800px;
+}
+
+/* Bottom controls: Prev - indicators - Next (above foreground image) */
+.carouselControls {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.navigationButton {
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationButton:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.navigationButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.dotIndicators {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.dot.active {
+  background: #f97316;
+  width: 32px;
+  border-radius: 4px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .carouselWrapper {
+    width: 65%;
+    left: 3%;
+    max-width: 720px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .carouselWrapper {
+    width: 92%;
+    left: 4%;
+    max-width: none;
+  }
+
+  .carouselControls {
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .navigationButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navigationButton svg {
+    width: 16px;
+    height: 16px;
+  }
+}

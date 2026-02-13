@@ -1,0 +1,196 @@
+.card {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+/* USER PROFILE SECTION - 3 Columns: Profile Pic | Details | Third Recipe */
+.userProfile {
+  display: grid;
+  grid-template-columns: 100px 1fr 160px;
+  gap: 20px;
+  align-items: start;
+}
+
+.profilePicColumn {
+  flex-shrink: 0;
+}
+
+.profilePic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.userDetailsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.thirdRecipeColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.thirdRecipeColumn .recipeImage {
+  height: 90px;
+}
+
+.userName {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+  font-family: 'Cormorant Garamond', 'Georgia', serif;
+}
+
+.userBio {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+  margin: 0;
+}
+
+/* RECIPES SECTION */
+.recipesSection {
+  margin-top: 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.recipesTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+}
+
+.recipesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.recipeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.recipeCard:hover {
+  transform: translateY(-4px);
+}
+
+.recipeImage {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recipeName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0;
+  text-align: center;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .userProfile {
+    grid-template-columns: 100px 1fr 180px;
+    gap: 24px;
+  }
+
+  .profilePic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .userName {
+    font-size: 28px;
+  }
+
+  .recipesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .recipeImage {
+    height: 180px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+    border-radius: 20px;
+    gap: 16px;
+  }
+
+  .userProfile {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .profilePic {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  .userDetailsColumn {
+    align-items: center;
+  }
+
+  .thirdRecipeColumn {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .userName {
+    font-size: 24px;
+  }
+
+  .userBio {
+    text-align: center;
+  }
+
+  .recipesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .recipeImage {
+    height: 160px;
+  }
+  
+  .recipesSection {
+    padding-top: 12px;
+  }
+  
+  .recipesTitle {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}

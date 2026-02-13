@@ -1,0 +1,83 @@
+.heroContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+/* Single image for small breakpoints (replaces lp-bg01 + lp-bg02) */
+.smallBreakpointImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 1;
+}
+
+.carouselWrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carouselWrapper > * {
+  pointer-events: auto;
+}
+
+@media (max-width: 640px) {
+  .carouselWrapper {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .smallBreakpointImage {
+    display: none;
+  }
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 1;
+}
+
+@media (max-width: 640px) {
+  .backgroundImage {
+    display: none;
+  }
+}
+
+.foregroundImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: min(75vw, 100%);
+  height: auto;
+  object-fit: contain;
+  object-position: right bottom;
+  z-index: 3;
+}
+
+@media (max-width: 640px) {
+  .foregroundImage {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .foregroundImage {
+    width: min(100vw, 100%);
+  }
+}
